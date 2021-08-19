@@ -1,0 +1,77 @@
+/* Recall that these are HTML5 elements.  To aid rendering in older browsers, (and IE) add the following: 
+ */header, nav, main, footer, aside {display: block;} 
+
+body {background-color:#800;
+}
+
+#wrapper { width: 80%;
+	       margin-left: auto;
+           margin-right: auto;
+           background-color: #c90; 
+}
+
+header {background-color: #ccf; 
+		border: .2em; 
+		border-style: dashed; 
+		border-color:#1036F5; 
+		  background-image: url(lighthouselogo.jpg); 
+		  background-repeat: no-repeat;
+}
+h1 {margin: .5em; 
+	border: .2em; 
+	border-style: solid; 
+	border-color:#D610F5; 
+	padding: 10px; 
+	text-align:center;
+}
+
+/* nav {background-color:#ccc; 
+	border: .2em; 
+	border-style: solid; 
+	border-color:#00ff00; 
+	margin:.5em;
+	 float: left;
+	 padding: 1%;
+     width: 10%; 
+} */
+nav { /* float: left; */
+	padding: 10px; 
+	text-align:center;
+	  width: 150px;
+}
+nav ul { list-style-type: none;
+		margin-left: 0;
+		padding: 10px;
+		display: inline;
+} 
+nav a { text-decoration: none;
+		padding: 10px;
+		font-weight: bold; 
+}
+/* nav li {display: inline;} */
+nav a:link { color: #ffffff; 
+}
+nav a:visited { color: #eaeaea; 
+}
+nav a:hover { color: #000066; 
+}
+	 
+main { background-color: pink; 
+ 	  margin-left: 14%; 
+	  margin-right:2%;
+      padding: 1%;
+}
+ 
+img {border: .2em; 
+	border-style:dotted; 
+	border-color:#0000ff;
+}
+				   
+#floatright { margin: 10px;
+               float: right; }
+ /*			  
+.clrright{clear:right;}    applied to an h2 element in html*/
+
+footer { text-align: center;
+         font-style: italic;
+         background-color: #ccccff; }

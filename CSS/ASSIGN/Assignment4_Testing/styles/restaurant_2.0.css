@@ -1,0 +1,103 @@
+header, nav, main, footer, aside {
+    display: block;
+}
+
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+/*2 Column Layout*/
+.col2
+{
+	
+}
+nav.col2
+{
+	float: left;
+	width: 11%;
+	height: 500px;
+	border: 2px solid black;
+	background-color: #094186;
+}
+main.col2
+{
+	margin-left: 13%;
+	border: 2px solid black;
+}
+footer.col2
+{
+	
+}
+/*3 Column Layout*/
+.col3
+{
+	
+}
+nav.col3
+{
+	float: left;
+	width: 11%;
+	height: 500px;
+	border: 2px solid black;
+	background-color: #094186;
+}
+main.col3
+{
+	margin-left: 12%;
+	margin-right: 11%;
+	border: 2px solid black;
+}
+aside.col3
+{
+border: 2px solid white;
+float: right;
+margin-bottom: 0px;
+width: 10%;
+height: 990px;
+background-color: #094186;
+	
+}
+footer.col3
+{
+	/*Location*/
+	border: 2px solid white;
+	margin-left: 12%;
+	margin-right: 11%;
+}
+/*For All pages*/
+nav ul { list-style-type: none;
+		margin-left: 0;
+		
+		padding: 10px;
+		display: inline;
+} 
+    /*Create styles for the anchor elements that are within the nav area to eliminate the default underline.*/
+    nav a {
+        text-decoration: none; /*6*/
+        display: block;
+		border-top-style: solid;
+		border-right-style: none;
+		border-bottom-style: solid;
+		border-left-style: none;
+		border-color: white;
+		border-bottom-width: 2px;
+        padding: 14px 25px;
+         background-color: #094186;
+    }
+
+        nav a:link {
+            color: black; /*7,8*/
+        }
+
+        nav a:visited {
+            color: white; /*7,8*/
+        }
+
+        nav a:hover {
+            color: blue;
+            background-color: grey; 
+        }
+span{
+	float: right;
+}

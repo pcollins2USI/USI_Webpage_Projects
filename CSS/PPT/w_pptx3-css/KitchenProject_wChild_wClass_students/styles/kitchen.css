@@ -1,0 +1,71 @@
+
+
+/*To illustrate dependent and child selectors: 
+  (each time, comment out all but the one you are testing) */
+
+/*  give li's that are descendants of ol green text  */
+
+ol li {
+    color: green;
+}
+
+/*  give li's that are children of ol red text   */
+
+ol > li {
+    color: red;
+}
+/*  give li's that are children of a ul blue text color
+    Note that in this case, the li's are both children and descendants of the ul's  */
+
+ul > li {
+    color: blue;
+}
+
+
+/* ========================  */
+/*To illustrate dependent class and ID selectors:  */
+
+/*Create a class named tinyfont that sets the font at .5em
+  and a dependent class that adds a text color to h2 items.
+  In the HTML file, apply tinyfont to the three places indicated    */
+
+  .tinyfont{
+	font-size: .5em;
+}
+h2.tinyfont{
+	color: #FF0000;
+}
+/*DONE*/
+  
+/*Create a class named silly to apply either Wingdings 2 or some fantasy font
+  and a dependent class that adds a font size of 250% to li elements.
+  In the HTML file, apply silly to the two places indicated      */
+
+  .silly{
+	  font-family: "Wingdings 2", fantasy;
+  }
+  li.silly{
+	  font-size: 250%;
+  }
+  /*DONE*/
+  
+/*Create a class named serious to with a background color
+  and a dependent class that adds Arial, Times New Roman, or some san-serif font.
+  In the HTML file, apply serious to the two places indicated    */
+  .serious{
+	  background-color: #b3b300;
+  }
+  p.serious{
+	font-family: Arial, Times New Roman, san-serif; 
+  }
+  
+
+ /* Create an id named brdr to style a solid black border, 4px wide
+   and a dependent id that curves the edges and changes the color to red.
+   In the HTML index file, apply brdr to the carrot image 
+   In the secondary page, apply brdr to the table     */
+   #brdr{border: 4px solid black;}
+    table#brdr {
+        border-radius: 25px;
+        border-color: red;
+    }

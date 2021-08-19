@@ -1,0 +1,74 @@
+
+/*
+body {
+    background-color: #e6e6fa;
+    color: #191970;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h1 {
+    background-color: #191970;
+    color: #E6E6FA;
+    line-height: 200%;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+    background-color: #aeaed4;
+    color: #191970;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+p {
+    font-size: .95em;
+    text-indent: 3em;
+}
+
+ul {
+    font-weight: bold;
+}
+    
+:root {
+    --lit: lightblue;
+}
+    */
+body {
+    background-color: wheat;
+    color: #b3b300;
+    font-family: Arial, Verdana, sans-serif;
+}
+h1 {
+    background-color: #b3b300;
+    color: #fff2cc;
+    font-size: 4em;
+    width: 50%;
+    text-align: center;
+    line-height: 200%;
+    /*margin: auto;*/
+    text-transform: uppercase;
+}
+
+h3 {
+    background-color: #b3b300;
+    text-decoration: underline;
+    word-spacing: .3em;
+    letter-spacing: .1em;
+    text-shadow: -3px 3px 0 #fff2cc;
+}
+
+p {
+   
+    text-indent: 2em;
+}
+/*Two examples of class or id*/
+.new{
+    color: #ff0000;
+    font-style: italic
+}
+#bob{
+    color: #ff0000;
+    font-size: 2em;
+    font-style: italic;
+}
+/*li(font-weight: bold)*/

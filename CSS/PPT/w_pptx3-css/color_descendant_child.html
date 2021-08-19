@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang = "en">
+
+<head>
+	
+	<title>Descendant vs Child</title>
+	<meta charset="utf-8"/>
+<style>
+	div p {color:DodgerBlue;}
+	div > p {background-color: yellow;}
+	
+	span {background-color: white;}
+	div > span {background-color: aqua;}
+
+</style>
+</head>
+<body>
+	<p> div p {color:DodgerBlue;} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(descendant)<br /> 
+		div > p { background-color: yellow;}&nbsp; &nbsp;(child)<br />
+	</p>
+	<!-- An element is a child if it is a descendant and is nested directly in parent element. Nested directly means there are no opening tags without corresponding closing tags between the opening tag of the parent (element A) and that of the child (element B).  -->
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <p><h4>Paragraph 3 in the div with h4 inside the p. </h4></p>
+  <p>Paragraph 4 in the div.</p>
+</div>
+
+<p>Paragraph 5. Not in a div.</p>
+<br /><br />
+<!--  ---------------------  -->
+<div>
+  <span>Span #1, in a new div.
+    <span>Span #2, in the span that's in this new div.</span>
+  </span>
+</div>
+
+<span>Span #3, not in the div at all.</span>
+
+</body>
+
+</html>

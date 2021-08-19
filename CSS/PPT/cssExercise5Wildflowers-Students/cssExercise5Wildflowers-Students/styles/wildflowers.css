@@ -1,0 +1,13 @@
+header, nav, main, footer, aside {
+    display: block;
+}
+header {
+    background-image: url("../images/showybg.jpg");
+	background-repeat: repeat;
+	border-style: solid;
+	border-color: black;
+	padding-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-position: left bottom;
+}

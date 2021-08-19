@@ -1,0 +1,25 @@
+
+/*To illustrate descendant and child selectors:
+ (each time, comment out all but the one you are testing)*/
+
+/*  give all li's blue text 
+li {color:#00f;}  */
+
+/*  give li's that are descendants of ul green text 
+ul li {color:#0f0;}  */
+
+/*  give li's that are children of a ul orange text 
+ul >li {color:#f80;}  */
+
+
+/*  give li's that are descendants of ol red text
+ol li {color:#f00;}   */
+
+/*  give li's that are children of ol lilac text 
+ol >li {color:#f0f;}     */
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+header, nav, main, footer, aside {
+    display: block;
+}
+
+body {
+    background-color: #2D352D;
+    color: #666666;
+    font-family: Georgia, serif;
+}
+/*3*/
+header {
+    border-style: solid;
+    border-color: whitesmoke; /*3*/
+    background-color: #348134; /*3*/
+    color: whitesmoke;
+    font-family: Georgia, serif;
+    padding: 10px; /*3*/
+    text-align: center; /*3*/
+}
+/*Style the nav element selector centered and bold font.
+    (Note:  the nav elements on the “Contact” page is different from the other pages.  
+    Do not change that.)*/
+nav {
+    font-weight: bold; /*5*/
+    text-align: center; /*5*/
+    padding: 20px 5px 0 20px;
+}
+    /*Create styles for the anchor elements that are within the nav area to eliminate the default underline.*/
+    nav a {
+        text-decoration: none; /*6*/
+        display: inline-block;
+        padding: 14px 25px;
+        background-color: #348134;
+    }
+
+        nav a:link {
+            color: black; /*7,8*/
+        }
+
+        nav a:visited {
+            color: rebeccapurple; /*7,8*/
+        }
+
+        nav a:hover {
+            color: blue;
+            background-color: grey; /*7,8*/
+        }
+
+/*Style h1 elements with a percent declaration value that will make 
+    it twice the height of the parent text’s line height*/
+h1 {
+    font-size: 200% /*4*/
+}
+
+dl dt {
+    font-weight: bold; /*13*/
+}
+/*Create a class named studio that configures italic text*/
+.studio {
+    font-style: italic; /*9*/
+}
+/*this does steps 1,2*/
+#wrapper {
+    width: 80%;
+    margin-left: auto; /*2*/
+    margin-right: auto; /*2*/
+    /*Background Color*/
+    background-color: lightgray; /*1*/
+    /*Text Color*/
+    color: black; /*1*/
+    /*Font*/
+    font-family: Georgia, serif; /*1*/
+    box-shadow: 3px 3px 3px #333
+}
+
+footer {
+    text-align: center;
+    font-size: x-small; /*10*/
+    font-style: italic; /*10*/
+    text-align: center; /*10*/
+    background-color: #348134;
+}
+
+    footer a:link {
+        color: whitesmoke;
+        text-decoration: none; /*10*/
+    }
+
+    footer a:visited {
+        color: rebeccapurple;
+    }
+
+    footer a:hover {
+        color: blue;
+    }

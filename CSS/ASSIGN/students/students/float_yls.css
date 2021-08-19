@@ -1,0 +1,24 @@
+/* for float_yls.html  */
+
+body {width: 500px;
+      background-color: #ffffff;
+      color: #000000;
+}
+div {background-color: #f3f1bf;
+}
+h1 {background-color: #658b42;
+    padding: 10px;	
+    color: #e1db5f;
+}
+
+p {font-family: Arial,sans-serif;  
+}
+.float { float: left;
+         margin-right: 10px;
+         border: 3px ridge #ff0000; 
+}
+#yls {float:right;
+          margin: 0 0 5px 5px;
+          border: 1px solid #ff0000;
+}
+
