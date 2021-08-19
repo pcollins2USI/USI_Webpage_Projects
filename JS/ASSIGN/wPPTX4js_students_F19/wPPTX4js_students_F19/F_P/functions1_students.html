@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang = "en">
+<head>
+	<title>JavaScript Functions</title>
+	<meta charset="utf-8"/>
+<style> h2 {color:#cc9900; text-decoration:underline;} </style>
+
+<!-- STUDENTS: ADD SCRIPT LINK AND CREATE js FILE -->
+<script type="text/javascript" src = "styles/function1_JS.js"></script>
+</head>
+<body>
+	<h1>Using JavaScript</h1>
+  <!-- Illustration from PowerPoint:  -->
+ 	<h2>usrname function</h2/> 
+  		<!--  copy/paste function from pptx to js file;
+		      You do not need to change the HTML for this function...-->  
+    <input type="button" value="Click to enter your name" onClick="usrname()"/>
+
+	
+<!------------ What is today's date?-------------------------------------->
+	<h2>todayis function</h2/>
+	
+	<p id="para">Today's Date?</p>
+	<input type="button" value="What's the Date?" onClick="todayis()" />
+		<!-- students: add onClick event to HTML and code js function in js file...-->
+
+		
+		
+<!------User age in dog years:  constant (Number of human years per dog year [7]) passed to function  -->
+	<h2>dogyrs function</h2>
+	
+	<p id="dmyage">What is my age in dog years?</p>
+	<input type="button" value="What is my 'dog' age?"  onClick="dogyrs(7)"/>
+		  <!--students: add onClick evant to HTML and JS function in js file...-->
+		
+		
+		
+<!------User age in cat years:  text box value (user age) passed to function  ----->
+	<h2>catyrs function</h2>
+	
+	<p id="myage">If I was a cat, how old would I be?</p>
+	<label for "myage">What is your age?</label>
+	<input id="my_age" type="text" name="my_age" size=5px />
+	</br>
+	<input type="button" value="What is my 'cat' age?" 	onclick="catyrs(my_age.value)"/> 
+	       <!--students: add onClick and js...-->
+
+		
+		
+<!-- function with argument from input box:  cost of seeds-->		
+	<h2>seeds function</h2> 
+	
+	<p id="cost">Each packet is $1.90.</p>
+	<label for "packets">How many packets of seed are you ordering?</label>
+	<input id="packets" type="text" name="packets" size=5px />
+	<br/>    
+	       <!--students: add the button with the onClick event handler and js...-->
+	
+	<input type="button" value="Calculate Cost" onClick="seeds(packets.value)"/>
+	
+ <!-- function with arguments from 2 input boxes:  cost of seeds-->
+
+	<h2>veggieseeds function</h2>    
+	
+	<label id="cost_corn">Each packet of Silver Queen corn seed is $1.99.</label><br/>
+	<label id="cost_peas">Each packet of Purple Hull peas seed is $1.75.</label><br/>
+	
+	<p>Please indicate the number of packets you are ordering.  Click Calculate for the total cost.</p>
+	
+	<label for "packets_corn">How many packets of corn seed are you ordering?</label>
+		<input id="packets_corn" type="text" name="packets_corn" size=5px />
+		<br/>
+	<label for "packets_peas">How many packets of peas seed are you ordering?</label>
+		<input id="packets_peas" type="text" name="packets_peas" size=5px />
+		<br/>
+		<input type="button" value="Calculate Cost" onClick="veggieseeds(packets_corn.value,packets_peas.value)"/>
+	   <!--students: add a <p>, to accept the innerHTML from the function, and a button with onClick event handler elements --> 
+	   
+	
+</body>
+</html>

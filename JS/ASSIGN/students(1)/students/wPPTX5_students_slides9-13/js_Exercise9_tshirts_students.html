@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Exercise 1</title>
+<!-- check src file -->
+<script type="text/javascript" src="ex9.js"></script>
+<style>
+form {width:450px;}
+</style>
+</head>
+<body>
+
+	<h1>Order Form -- Exercise 9</h1>
+	<h2>T-Shirt Order Form</h2>
+	<form>
+		<p>Our quality t-shirts are priced at only $14.99 each with a shipping charge of $1.05 per shirt.  Quantity orders of more than 25 shirts, however, qualify for free shipping.</p>
+		<!-- add an onblur event handler to send value to function -->
+		<label for="qty">How many t-shirts are you ordering?</label>
+			<input type="text" id="qty" name="qty" size="5px" />
+		<!-- add spans to allow for .innerHTML insertions -->	
+		<p>T-shirt total: 
+		   Shipping cost: 
+		   Order total: 
+		
+		<p>Orders being shipped to Missouri or Illinois should arrive within 3-5 days. Orders to other US destinations may take up to 20 days for delivery.</p>
+		<!-- add an onblur event handler to send value to function -->
+		<label for="state">To what state will this order be delivered?</label>
+			<input type="text" name="state" id="state" size="5px"  />
+		<!-- add a span to allow for .innerHTML insertion -->	
+		<p></p>
+	</form>
+</body>
+</html>

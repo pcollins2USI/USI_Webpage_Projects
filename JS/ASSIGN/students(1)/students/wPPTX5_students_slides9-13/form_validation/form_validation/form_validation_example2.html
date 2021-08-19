@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang = "en">
+
+<head>
+	<title>JS Validate Form Controls</title>
+	<meta charset="utf-8"/>
+  <script type="text/javascript" src="form_validation_example2.js"></script>	
+  
+<style>
+.redstar{color:#ff0000;}		
+</style>
+
+</head>
+
+<div id="wrapper">
+  <body>
+
+	<h1>Survey Information</h1>
+	<p>Begin our survey by entering the 7-character password provided.<p/>
+	
+	<label for="pw">Password:&nbsp;</label>
+		<input type="password" name="pw" id="pw" maxlength="7" size="12" onblur="ckpw(pw.value)";/>
+		<br><br>
+<!-- Note the "return" keyword.  It is looking for "true" to be returned from the js function -->		
+	<form onsubmit="return validateForm();" name="custinfo">
+	
+			<label for="fname"><span class="redstar">&#42;</span>First Name:</label>
+				<input type="text" name="fname" id="fname"><br><br>
+				
+			<label for="lname"><span class="redstar">&#42;</span>Last Name:</label>
+				<input type="text" name="lname" id="lname"> <br><br>
+				
+			<label for="state">State:</label>
+				<input type="text" name="state" id="state" size="5" maxlength="2"><br><br>
+				
+			<label for="zip">Zip:</label>
+				<input type="text" name="zip" id="zip" maxlength="5" size="5">&#45;
+				<input type="text" name="zip4" id="zip4" maxlength="4" size="4"><br><br>
+			<label for="userPhone">Phone:</label>
+				<input type="text" name="userPhone" id="userPhone"><br><br>
+			<label for="quantity">Quantity:</label>
+				<input type="text" name="quantity" id="quantity">
+
+		<input type="submit" value="Submit Survey">&nbsp;
+
+	</form>
+  </body>
+</div>
+</html>

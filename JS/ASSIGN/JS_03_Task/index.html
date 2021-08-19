@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang = "en">
+<head>
+</head>
+<body>
+<nav>
+
+</nav>
+
+<main>
+		<script type="text/javascript">
+		//Task 1
+		var cel; var fah;
+		cel  =  prompt("What is the celsius degrees?");
+		fah = 1.8 * parseFloat(cel) + 32;
+		document.write("<h1>Task 1</h1>");
+		document.write("<h2>" + cel + " degrees Celsius converts to <br />");
+		document.write(fah + " degrees Fahrenheit.</h2>");
+		</script>
+		
+		<script type="text/javascript">
+		//Task 2
+		var kg; var lbs;
+		kg  =  prompt("What is the kilograms?");
+		lbs = parseFloat(kg) / 0.45359237;
+		document.write("<h1>Task 2</h1>");
+		document.write("<h2>" + kg + " kilograms converts to <br />");
+		document.write(lbs + " pounds.</h2>");
+		</script>
+		
+		<script type="text/javascript">
+		//Task 3
+		document.write("<h1>Task 3</h1>");
+		document.write("<h2>" + Math.round(lbs) + " pounds to the nearest integer.</h2>");
+		</script>
+		
+		<script type="text/javascript">
+		//Task 4
+		var day; var hour; var total;
+		document.write("<h1>Task 4</h1>");
+		day = 75.30 * 3;
+		document.write("<h2>$75.30 per day * 3 days = $" + day.toFixed(2) + "</h2><br />");
+		hour = 6.79 * 4;
+		document.write("<h2>$6.79 per hour * 4 hours = $" + hour.toFixed(2) + "</h2><br />");
+		total = day + hour;
+		document.write("<h2>Total = $" + total.toFixed(2) + "</h2><br />");
+		</script>
+		
+		<script type="text/javascript">
+		//Task 5
+		document.write("<h1>Task 5</h1>");
+		day = prompt("How many days have you had the vehicle?");
+		document.write("<h2>$75.30 per day * " + day + " days = $");
+		day = 75.30 * day;
+		document.write(day.toFixed(2));
+		
+		hour = prompt("How many hours have you had the vehicle after the days?");
+		document.write("<h2>$6.79 per hour * " + hour + " hours = $");
+		hour = 6.79 * hour;
+		document.write(hour.toFixed(2));
+		total = day + hour;
+		</script>
+		
+		<h3 id="total">Total = </h3>
+		<input type="button" value="Get total" onClick="myFunction()" />
+
+		<script type="text/javascript">
+		total = "<h2>Total = $" + total.toFixed(2) + "</h2>";
+		function myFunction() {
+		document.getElementById("total").innerHTML = total;}
+
+		</script>
+		
+		<!--Task 6-->
+		<form>
+			<h2>
+			<label for="days">Days:</label>
+			<input id="days" type="text" name="days">
+			<label for="hours">Hours:</label>
+			<input id="hours" type="text" name="hours">
+			<label for="hours">Hours:</label>
+			
+			<p id="tot">Total</p>
+			</h2>
+
+		<input type="button" onClick="getElementById('tot').innerHTML = ((75.30 * parseFloat(document.getElementById('days').value)) + (6.79 * parseFloat(document.getElementById('hours').value))).toFixed(2)" value = "Calculate Total"/>
+		</form>
+
+</main>
+
+</body>
+</html>

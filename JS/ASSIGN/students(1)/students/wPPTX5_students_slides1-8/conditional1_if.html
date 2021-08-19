@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+	<title>Conditionals --IF</title>
+	<meta charset="utf-8"/>	
+<!-- students will need to change src file to conditional1_if_students.js -->
+<script type="text/javascript" src="conditional1_if.js"></script>
+</head>
+
+<body>
+<!-- Illustration from pptx slide----------- -->
+	<h2>From pptx:  Input from prompt - IF ELSE syntax</h2>
+	<input type="button" value="Click to enter quantity" onclick="prompt_quantity();">
+
+<!-- 1-------------------------------------- -->
+	<h2>Sales Tax:  If without else</h2>
+	<p>Please enter your state of residence </br> (Hoosiers pay sales tax): 
+	<input type="text" id="mystate" name="mystate" onblur="samestate(mystate.value)" /> </p>
+	<p id="message"></p>
+
+<!-- 2-------------------------------------- -->
+	<h2>Basic math:  If with else</h2>
+	<p>What is 2 + 2?</p>
+	
+	<input type="text" id="myanswer" name="myanswer" /> 
+	<input type="button" value="Am I right?" onclick="checkmath(myanswer.value)" />
+	
+	<p id="feedback">Click the button above to test your knowledge.</p>
+
+<!-- 3-------------------------------------- -->
+	<h2>Driving Age Test:  IF  and  CASE</h2>
+	<p>Please Enter Your Age: 
+	<input type="text" id="myage" name="myage" /></p>
+	<input type="button" value="Am I Old Enough?" onclick="check_age(myage.value)" />
+	<p id="ageinfo">Click the button above.</p>
+
+</body>
+</html>

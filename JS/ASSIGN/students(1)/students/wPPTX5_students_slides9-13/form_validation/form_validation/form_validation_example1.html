@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JavaScript ValidateForm</title>
+  <meta charset="utf-8">	
+  <script type="text/javascript" src="form_validation_example1.js"></script>
+<!--
+=======================================================================================
+ Following is styled with css and validates three input text boxes via a function in js
+ One field is noted as required (red star)
+=======================================================================================
+-->
+<style>
+input { display: block;
+        margin-bottom: 1em;
+        }
+label { float: left;
+        width: 5em;
+		padding-right: 1em;
+        text-align: right; 
+}
+.redstar{color:#ff0000;}
+#submit { margin-left: 7em; }		
+</style>
+
+
+<body>
+	<h1>JavaScript Form Validation</h1>
+	
+	<p><span id="oops"></span> </p>
+
+	<form>
+		<label for="username">Name:</label>
+			<input type="text" name="username" id="username">
+			
+		<label for="zip"><span class="redstar">&#42;</span>Zip Code:</label>
+			<input type="text" name="zip" size="5px" id="zip">
+						
+		<label for="userage">Age:</label>
+			<input type="text" name="userage" id="userage">
+			
+		<input type="button" value="Continue" id="check" onclick="chkform()">
+	</form>
+	
+</body>
+
+</html>

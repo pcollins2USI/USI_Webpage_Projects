@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Exercise 6 - Temp, Weight, Rental, Rounding</title>
+<!-- <script type="text/javascript" src="ex3.js"></script>  -->
+<style>
+h3{color:#ee0000;}
+</style>
+
+</head>
+<body>
+<!-- ---Task 1 - Convert Cel from prompt to Fer (with innerHTML) ----------------------------  
+-->
+	<h2>Exercise 6 - Task 1</h2>
+	<h3>Temperature Conversion </h3>
+	<p><span id="tempc"></span> degrees Celsius converts to <span id="tempf"></span> degrees Fahrenheit.</p>
+<script>
+var tempc=prompt("Please provide a Celsius temp");
+var tempf=1.8*tempc+32; 
+document.getElementById("tempc").innerHTML=tempc;
+document.getElementById("tempf").innerHTML=tempf;
+</script>
+<!-- --- end of Task 1  ----------------------------
+---------------------------------------------------- -->
+
+
+<!-- ---Task 2 - Convert lbs from prompt to kg via button (with document.write)-----------
+-->
+	<h2>Exercise 6 - Task 2</h2>
+	<h3>Weight Conversion </h3>
+		
+<script>
+var kgs=prompt("Please provide the number of kilograms");
+var lbs=kgs/0.45359237;
+
+	document.write(kgs +" kgs converts to " + lbs + " lbs. </br>" );
+	
+	
+</script>	
+<!-- --- end of Task 2  ----------------------------
+---------------------------------------------------- -->
+
+
+<!-- ---Task 3 - Round Task 2 results to nearest integer (Math.round)-->
+	<h2>Exercise 6 - Task 3</h2>
+	<h3>Round Task 2 results to nearest integer</h3> 
+		
+<script>
+	document.write(kgs +" kgs converts to " + Math.round(lbs) + " lbs.");	
+</script>	
+
+<!-- --- end of Task 3  ----------------------------
+---------------------------------------------------- -->	
+
+
+<!-- ---Task 4 - calculate charges for 3 days & 4 hrs car rental (.toFixed(2)) -->
+	<h2>Exercise 6 - Task 4</h2>
+	<h3>Round to 2 decimals </h3>
+		
+<script type="text/javascript">
+	var day_rate= 75.3; var hr_rate= 6.79;
+	var days_out=3;  	var hrs_over=4;
+
+	document.write("charge for " + days_out + " days: &nbsp;&nbsp; "+ (days_out*day_rate).toFixed(2) +"</br>")
+	
+	document.write("charge for  " + hrs_over + " hrs over: &nbsp;&nbsp; " + (hrs_over*hr_rate).toFixed(2) + "</br>")
+	
+	document.write("Total: &nbsp;&nbsp; "+ (hrs_over*hr_rate + days_out*day_rate).toFixed(2))	
+
+</script>
+
+<!-- --- end of Task 4  ----------------------------
+---------------------------------------------------- -->	
+
+</body>
+</html>

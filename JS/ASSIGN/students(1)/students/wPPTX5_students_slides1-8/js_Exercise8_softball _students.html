@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+	<title>Softball Scores</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="ex8_softball.js"></script>
+</head>
+<body>
+
+<!-- -------------------------------------------------------------------
+    --  Determine winner of softball game ---
+Hints for html:
+1) Add a button to calculate scores.  
+2) Add 2 ids to the last <p> element to display totals.
+3) Add one more <p> to display the winning team name.
+4) Send all four scores to a single function for calculation.
+
+Hints for js (use IFs; CASE not really appropriate):
+5) One function is needed with places to accept the 4 values being sent.
+6) Since some scores may not be entered (blank text box), test each 
+   box and assign a zero to blank boxes.
+7) Assign (create) 2 variables... to hold the total for each team.
+8) Remember that text boxes contain TEXT and you can't do math with text.
+9) Provide for the possibility of a tie game.
+------------------------------------------------------------------------- -->
+	<h2>Tiny Tots Softball</h2>
+	<p>An abbreviated, 2-inning game for little tikes. Go Purple team! Go Yellow team!</p>
+	<label for="inning1p">1st Inning:  Purple</label>&nbsp;
+		<input type="text" id="inning1p" size="5px"/>&nbsp;&nbsp;&nbsp;
+	<label for="inning1y">Yellow</label>&nbsp;
+		<input type="text" id="inning1y" size="5px"/>
+	<br/><br/>
+	<label for="inning2p">2nd Inning:  Purple</label>&nbsp;
+		<input type="text" id="inning2p" size="5px" />&nbsp;&nbsp;&nbsp;
+	<label for="inning2y">Yellow</label>&nbsp;
+		<input type="text" id="inning2y" size="5px"/>
+	<br/><br/>	
+	
+	
+	
+	<p>Click the button above to calculate current results.</p>
+	
+	<p>The total for the Purple team is  <br/>
+	   The total for the Yellow team is  </p>
+	
+
+	
+</body>
+</html>

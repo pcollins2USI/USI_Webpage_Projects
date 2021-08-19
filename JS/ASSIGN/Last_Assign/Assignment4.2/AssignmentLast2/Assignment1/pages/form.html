@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4.dtd">
+<!-- Select a language and encloses all html-->
+<html lang="en">
+
+<head>
+    <title>Age of Food</title>
+    <link rel="shortcut icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../styles/restaurant_3col.css" />
+    <script type="text/javascript" src="../styles/functions.js"></script>
+</head>
+
+<body onload="hidecar()">
+    <div id="wrapper">
+        <!--1: HTML5 Structural Elements-->
+        <header role="banner">
+            <span><a href="#content">Skip to Content</a></span>
+            <img src="../images/logo.png" alt="company logo" title="company logo" />
+        </header>
+        <nav role="navigation">
+
+            <a href="../pages/menu.html">Our Menu</a>
+            <a href="../pages/contact.html">Contact Us</a>
+            <a href="https://www.google.com/maps/place/800+N+Green+River+Rd,+Evansville,+IN+47715/@37.9852189,-87.4970455,17z/data=!3m1!4b1!4m5!3m4!1s0x886e2b0496968293:0x47b612ae6a563dea!8m2!3d37.9852189!4d-87.4948568" target="_blank">Find Us</a>
+        </nav>
+        <aside role="complementary">
+            <p>
+                <span id="listhead"></span> <br>
+            </p>
+
+            <p>
+                <span id="list"></span> <br>
+
+            </p>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <span id="tax"></span> <br />
+            <span id="total"></span> <br />
+        </aside>
+        <main id=#content role="main">
+            <form id="mainform">
+                <h3><label>Customer Information</label></h3>
+                <p>Name: <input type="text" name="name" /> <br> </p>
+                <p>Address: <input type="text" name="address" /> <br> </p>
+                <p>Phone: <input type="text" name="phone" size="12"/> <br> </p>
+                <label for="cust_age">Customer's Age: </label>
+                <select onchange="viewcar()" id="cust_age">
+                    <option value="none"></option>
+                    <option value="senior">Senior</option>
+                    <option value="adult">Adult</option>
+                    <option value="child">child</option>
+                </select><br /><br />
+                <div id="cust">
+                    <div id="senior">
+                        <h3><label>Senior</label><br></h3>
+                        <input type="checkbox" name="jello" id="jello" value="true" onchange="allitems('jello')">
+                        <label for="jello">jello</label>
+                        <select id="jnum">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br><br />
+
+                        <input type="checkbox" name="fruit" id="fruit" value="true" onchange="allitems('fruit')">
+                        <label for="fruit">Fruit Cup</label>
+                        <select id="fnum">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br><br />
+                        <input type="checkbox" name="prune" id="prune" value="true" onchange="allitems('prune')">
+                        <label for="prune">Prune Juice</label>
+                        <select id="pnum">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br><br />
+
+                    </div>
+                    <div id="adult">
+                        <h3><label>Adult</label><br></h3>
+                        <input type="checkbox" name="alcohol" id="alcohol" value="true" onchange="allitems('alcohol')">
+                        <label for="alcohol">Alcohol</label>
+                        <select id="anum">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br><br />
+
+                        <input type="checkbox" name="steak" id="steak" value="true" onchange="allitems('steak')">
+                        <label for="steak">Steak</label>
+                        <select id="snum">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br><br />
+
+                        <input type="checkbox" name="rolls" id="rolls" value="true" onchange="allitems('rolls')">
+                        <label for="rolls">Rolls</label>
+                        <select id="rnum">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br><br />
+                    </div>
+                    <div id="child">
+                        <h3><label>Child</label><br></h3>
+                        <input type="checkbox" name="cool" id="cool" value="true" onchange="allitems('cool')">
+                        <label for="cool">Cool Aid</label>
+                        <select id="cnum">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>Qty<br><br />
+
+                        <input type="checkbox" name="mac" id="mac" value="true" onchange="allitems('mac')">
+                        <label for="mac">Mac&Cheese</label>
+                        <select id="mnum">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>Qty<br><br />
+
+                        <input type="checkbox" name="french" id="french" value="true" onchange="allitems('french')">
+                        <label for="french">French Fries</label>
+                        <select id="frnum">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>Qty<br><br />
+                    </div>
+                </div>
+                <h3>Pick up options</h3>
+                <select id="pickup">
+                    <option value="dine in">Dine in</option>
+                    <option value="carry out">Carry out</option>
+                    <option value="delivery">Delivery</option>
+                </select><br><br />
+
+                <label>Payment Options</label>
+                <select onchange="viewpay()" id="cust_pay" name="cust_pay">
+                    <option value="none"></option>
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="debit">Debit</option>
+
+                </select>
+                <div id="cash">
+                    <p>Input amount: <input type="text" name="cashnum" /></p>
+                </div>
+                <div id="credit">
+                    <p>Credit card number: <input type="text" name="credit" maxlength="12" /> <br> </p>
+                    <p>Security code: <input type="text" name="scredit" maxlength="3" size="4" /> <br> </p>
+                    <p>Input amount: <input type="text" name="inputdredit" size="10" /> <br> </p>
+                </div>
+                <div id="debit">
+                    <p>Debit card number: <input type="text" name="dedit" maxlength="12" /> <br> </p>
+                    <p>Input amount: <input type="text" name="sdredit" size="10" /> <br> </p>
+                </div>
+                <br>
+                <input type="submit" value="Place Order" onclick="verify()" />
+            </form>
+        </main>
+
+    </div>
+</body>
+
+</html>

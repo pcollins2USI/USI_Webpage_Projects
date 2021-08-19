@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript var</title>
+	<meta charset="utf-8">
+<style>h4 {color:#f00; display:inline;} </style>
+</head>
+<body>
+	<p>MATH EXAMPLES 2</p>
+	
+<script type="text/javascript">
+	  
+/* ---------reset------------- */
+	var value1; var value2; var value3; 
+	var result1; var result2; 
+	
+	  value1="4.5";    
+	  value2="50.2";
+	  value3="2.8";
+
+	  document.write("<h4>value1 =4.5 </br>  value2 =50.2  </br>  value3 =2.8 </h4></br>");  
+	  
+/* concatenate	 */  document.write("</br><h4>concatenate&nbsp;(+)</h4></br>");
+	  
+	  result1=value1+value2+value3;
+			document.write(result1 + "&nbsp;&nbsp;&nbsp;&nbsp;result1 =value1+value2+value3</br>");
+			
+/* integer	 */		document.write("</br><h4>integer &nbsp;(parseInt) </h4></br>");	
+	  result1=parseInt(value1)+parseInt(value2)+parseInt(value3);
+			document.write(result1 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  result1=parseInt(value1)+parseInt(value2)+parseInt(value3)</br>");
+			
+/* decimal	 */		document.write("</br><h4>decimal &nbsp;(parseFloat) </h4></br>");	
+	  result1=parseFloat(value1)+parseFloat(value2)+parseFloat(value3);
+			document.write(result1 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   result1=parseFloat(value1)+parseFloat(value2)+parseFloat(value3)</br>");
+
+/* round to nearest integer without specifying up or down:  */    
+      document.write("</br><h4>round to nearest integer &nbsp;(Math.round) </h4></br>");
+
+	  result2=Math.round(4.7);		  document.write(result2 + "&nbsp;&nbsp;&nbsp;  result2=Math.round(4.7)</br>");
+	  result2=Math.round(4.4);		  document.write(result2 + "&nbsp;&nbsp;&nbsp;  result2=Math.round(4.4)</br>");
+	  result4=Math.round(result1);	  document.write(result4 + "&nbsp;&nbsp;&nbsp;  result4=Math.round(result1)</br>");
+	  
+/*round up to nearest integer*/
+      document.write("</br><h4>round up to nearest integer &nbsp; (Math.ceil)</h4></br>");
+	  
+	  result2=Math.ceil(4.4);				document.write(result2 + "&nbsp;&nbsp;&nbsp;  result2=Math.ceil(4.4)</br>");
+
+/*round down to nearest integer*/
+      document.write("</br><h4>round down to nearest integer &nbsp;(Math.floor)</h4></br>");	  
+
+	  result2=Math.floor(4.7);				document.write(result2 + "&nbsp;&nbsp;&nbsp;  result2=Math.floor(4.7)</br>");
+	  
+/* round to x number of decimals: use toFixed  */
+      document.write("</br><h4>round to x number of decimals  &nbsp; (  .toFixed()  )</h4></br>");
+
+	  result4=Math.round(result1);	  document.write(result4 + "&nbsp;&nbsp;&nbsp;  result4=Math.round(result1)</br>");
+	  result1.toFixed(1);			  document.write(result1 + "&nbsp;&nbsp;&nbsp;  result1.toFixed(1)</br></br>");
+	  
+/* example of Math.floor and %=  
+   Need 148 items; box holds 35. How many full boxes and how many "loose" items? */
+	 document.write("<h4>example of Math.floor and %=</h4></br>");
+	 document.write("Need 148 items; box holds 35. How many full boxes and how many 'loose' items?</br>");
+ 
+    var numitems=148; var boxqty=35;         document.write("&nbsp;&nbsp;&nbsp;var numitems=148; var boxqty=35;</br>");
+    var fullbx = Math.floor(numitems/boxqty);document.write("&nbsp;&nbsp;&nbsp;var fullbx = Math.floor(numitems/boxqty)</br>");
+    var partial = (numitems %= boxqty);      document.write("&nbsp;&nbsp;&nbsp;var partial = (numitems %= boxqty)</br>");
+	document.write(fullbx +" full boxes </br>" + partial + "    units short </br></br>");
+	
+/* min  max   and   random  */
+	 document.write("<h4>min  (Math.min)</h4></br>");		
+	  result2=Math.min(0, 150, 30, 20, -8, -200); 
+				document.write(result2 + "&nbsp;&nbsp;&nbsp;   result2=Math.min(0, 150, 30, 20, -8, -200);</br></br>");
+				
+	 document.write("<h4>max  (Math.max)</h4></br>");				
+	  result2=Math.max(0, 150, 30, 20, -8, -200); 
+				document.write(result2 + "&nbsp;&nbsp;&nbsp;   result2=Math.max(0, 150, 30, 20, -8, -200);</br></br>"); 
+				
+	 document.write("<h4>random  (Math.random)</h4></br>");				
+	  result2=Math.random();   
+				document.write(result2 + "&nbsp;&nbsp;&nbsp;   result2=Math.random();</br></br>");
+
+	  
+	  document.write("<h4>...and with all that, there is no Math.average!</h4>")
+
+</script>	
+</body>
+</html>

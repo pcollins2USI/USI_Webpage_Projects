@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang = "en">
+<head>
+<link rel="stylesheet" href="styles/assign1.css">
+</head>
+<body>
+<nav>
+
+</nav>
+
+<main>
+		<script type="text/javascript">
+		window.alert("Thank you for using our template.");
+		var title  =  prompt("What do you want the title to be?");
+		document.write("<h1>" + title + "</h1>");
+		</script>
+		<fieldset class="greenb"><legend class="red" id="getname">Employee Information</legend>
+			<label for="firstname" class="space"><span class="red">*</span>First name&emsp;&emsp;</label>
+			<input id="firstname" type="text" name="firstname" size="30" placeholder="First name">
+			
+			<label for="hdate" class="space">&emsp;Hire Date&emsp;</label>
+			<input id="number" type="number" placeholder="mm" name="hgt" min="1" max="12" size="4">
+			<input id="number" type="number" name="wth" min="1" max="31" placeholder="dd" size="4">
+			<input id="number" type="number" name="wth" placeholder="yyyy" size="4">
+			
+			
+
+			</br><br>
+			<label for="lastname" class="space"><span class="red">*</span>Last name&emsp;&emsp;</label>
+			<input id="lastname" type="text" name="lastname" size="30" placeholder="Last name">
+			<label for="po" class="space">&emsp;Position&emsp;&emsp;</label>
+			<select size="1" name="position" id="position">
+			<option> Select your position</option>
+			<option value="ma"> Manager</option>
+			<option value="su"> Supervisor</option>
+			<option value="sa"> Sales Rep</option>
+			<option value="cl"> Clerk</option>
+			</select>
+			<br><br>
+			<label for="email" class="space"><span class="red">*</span>E-mail address</label>
+			<input id="email" type="email" name ="email" size="30" placeholder="Enter your office email">
+			<label for="pho" class="space">&emsp;Office Phone</label>
+			<input id="pho" type="text" name="pho" size="30" placeholder="Enter your office phone number">
+		</fieldset>
+		<br /><br />
+		<fieldset class="greenb"><legend>Skill Set and Current Assignment</legend>
+			<br />
+			<form><span class="space">Where are you currently assigned?</span><br />
+				<input type="radio" name="country" id="fr" value="fr"> France<br />
+				<input type="radio" name="country" id="ger" value="ger"> Germany<br />
+				<input type="radio" name="country" id="th" value="th"> Thailand<br />
+				<input type="radio" name="country" id="usa" value="usa"> USA<br />
+				<input type="radio" name="country" id="ven" value="ven"> Venezuela<br />
+				<br /><br />
+				<span class="space">Check all languages that you speak:</span><br />
+				<input type="checkbox" name="eng" id="eng" value="yes"> English<br />
+				<input type="checkbox" name="fre" id="fre" value="yes"> French<br />
+				<input type="checkbox" name="ger" id="ger" value="yes"> German<br />
+				<input type="checkbox" name="rus" id="rus" value="yes"> Russian<br />
+				<input type="checkbox" name="spa" id="spa" value="yes"> Spanish<br />
+				<input type="checkbox" name="oth" id="oth" value="yes"> Other (please list; separate with a comma)&nbsp;
+				<input id="comments" type="text" name="comments" size="70">
+			</form>
+
+		</fieldset>
+		<br /><br />
+		<fieldset class="greenb"><legend>Additional Information</legend>
+			<br />
+			<form>Include any additional information you feel will help us better determine a suitable role for you in our company.<br />
+				<textarea id="comments" name="comments" cols="80" rows="5" ></textarea>
+				<br /><br />
+				
+			</form>
+		</fieldset>
+		<br />
+		<button type="submit" value="Submit">Save</button>
+		<button type="reset" value="Reset">Clear</button>
+		<button onclick="self.close()">Close</button>
+		<br />
+		<script type="text/javascript">
+		var today = new Date();
+		document.write("Rendered:" + today);
+		var group =  prompt("What do you want the group type to be?");
+		document.getElementById("getname").innerHTML=group + " Information";
+		document.bgColor = "beige"; 
+		</script>
+
+</main>
+
+</body>
+</html>

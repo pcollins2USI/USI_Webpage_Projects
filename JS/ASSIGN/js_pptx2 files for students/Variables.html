@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang = "en">
+<head>
+	<title>Variables Examples</title>
+	<meta charset="utf-8"/>
+	<meta name ="keywords" content = "javascript, comment" />
+    <!--[if lt IE 10]>
+      <link rel="stylesheet" type="text/css" media="screen" href="contact.css" />
+    <![endif]-->
+
+</head>
+<body>
+	<h2>Variables</h2>
+
+<!--
+--VARIABLES--------------------------------------------------------------------
+Below this comment, add script tags and the js text as noted on the slide.
+The next 2 slides will add additional lines.
+-------------------------------------------------------------------------------
+-->
+
+<script type="text/javascript">
+var firstplace = prompt("What is the winner\'s name?");
+	document.write(firstplace + "\n");
+var secondplace = prompt("What is the runner-up\'s name?");
+	document.write(secondplace + "\n" + "<br>");
+var score1 = prompt("Please enter first score.");
+	document.write("first score:" + score1 + "\n");
+var score2 = prompt("Please enter second score.");
+	document.write("second score:" + score2 + "\n");
+//var total = score1+score2;
+var total=parseInt(score1)+parseInt(score2);
+	document.write("total score:" + total);
+</script>
+
+
+<!--
+------------------------------------------------------------------------------
+Following is a second illustration. (It assigns info via variables and replaces HTML content.)  Comment the previous script and uncomment the code below.  You will add script under the HTML <p> tags.
+-------------------------------------------------------------------------------
+-->
+	<p>Score 1: <span id="first"></span><br />
+	   Score 2: <span id="second"></span><br />
+	     Total: <span id="totalscore"></span><br /></p>
+<script type="text/javascript">
+var score1=150; var score2=23; var total=score1+score2;
+document.getElementById("first").innerHTML=score1;
+document.getElementById("second").innerHTML=score2;
+document.getElementById("totalscore").innerHTML=total;
+</script>	
+
+
+<!--
+------------------------------------------------------------------------------
+The third illustration obtains info from prompts, shows the difference between assigning numbers in variable declaration and user input, and introduces parseInt to convert string to integer.
+	 
+This is dynamic vs the previous static illustrations.
+	 
+You will add a script before and another after the HTML code.  The first obtains input prior to rendering the page, and the second replaces data after the page has been rendered.
+-------------------------------------------------------------------------------
+	
+<script type="text/javascript">
+
+
+
+
+</script>
+
+	<p>Congratulations to all of our winners!</p>
+	<p>In First Place is: <span id="firstplace">TBA</span></p>
+	<p>In Second Place is: <span id="secondplace">TBA</span></p>
+
+	<h2>Expressions</h2>
+	<p>Score 1: <span id="first"></span><br />
+	   Score 2: <span id="second"></span><br />
+	   Total: <span id="totalscore"></span><br /></p>
+	   
+-->
+	   
+<!-- ----------------------------------------------------------------------- 	   
+	
+<script type="text/javascript">
+
+
+
+
+</script>
+-->
+</body>
+</html>

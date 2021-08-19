@@ -1,0 +1,22 @@
+fieldset { background-color:#ccffff;
+	   font-family: Arial, sans-serif;
+       padding: 10px; 
+		}
+fieldset label { 
+		float: left; 
+		clear: left;
+	    width: 100px; 
+	    text-align: right; 
+	    padding-right: 5px;
+		}
+.redstar{color:#ff0000;}		
+.gndrRadio{padding-left:45px;}
+#myCart { float:right; }
+#wrapper {width:90%;
+		   margin-left:auto;
+		   margin-right:auto;
+		   background-color:#ffffcc;
+		   }
+		   
+		   
+		   

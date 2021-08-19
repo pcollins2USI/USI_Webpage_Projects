@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript events</title>
+	<meta charset="utf-8">
+	<meta name ="keywords" content = "javascript, comment, variable, prompt" />
+	
+<style>
+h5{color:#f00}
+#bonus{color:#0000ff;}
+.bday{border:none; 
+      font-size:2em; 
+	  color:#0f0;}
+</style>
+<!-- 
+	<script type="text/javascript" src="path/file.js"></script>  
+-->	
+</head>
+<body>
+	<h1>JavaScript events such as onclick onmouseover onkeypress</h1>
+	<h2>Welcome to Event Examples!</h2>
+	
+<!-- onmouseover  -->	
+<!-- Note the ' ' around the text for the alert.  Previously we could use " "; now the "alert..." needs the "".
+	window.alert("Welcome to my web page!");   -->
+	<h5>Example 1: onmouseover</h5>
+	<p>This ticket type includes a <span id="bonus" onmouseover="alert('First checked bag is free with this ticket.')">BONUS </span>when purchased using our credit card.</p>
+
+
+	
+<!-- onmouseout INCOMPLETE 
+     When the user leaves the textbox, ask if a vehicle type was entered.  How do you do that?-->
+	<h5>Example 1a: onmouseout</h5>	
+	<label for "vehicle">Vehicle Type:</label>
+		<input type="text" id="V" onmouseout="alert('Did you enter a vehicle type?')" >
+
+		
+<!-- onclick  -->
+	<h5>Example 2: onclick</h5>	
+	<p id="datenow">Click the button for the current date</p>
+	<input type="button" value="Want the date?" onClick="document.getElementById('datenow').innerHTML 
+             =Date();" />
+			 
+<!-- onclick 2 -->			 
+	<h5>Example 2a: another onclick</h5>
+	<p id="hbd">Click 'yes' if today is your birthday.</p>
+<script>
+	var hbdimage;  
+	hbdimage="<img src='bday.jpg'>";
+</script>	
+	<input class="bday" type="text" value="YES!" onclick="document.getElementById('hbd').innerHTML='HAPPY BIRTHDAY!!'+hbdimage"/>
+
+	
+<!-- ondblclick  INCOMPLETE
+	 Inform the user that their record has been update when a textbox with the value of 'update' is double clicked.
+	 How do you do that?  -->
+	<h5>Example 2b: ondblclick</h5>		
+	<p id="update">Review your data and then double-click Update.</p>
+	<input type="text" value="Update" size=5 ondblclick="document.getElementById('update').innerHTML='Record is updated'">
+
+	
+		<!-- breaks to provide space so 'go to top' will be obvious -->
+		</br></br></br></br></br></br></br></br></br></br></br></br>
+		</br></br></br></br></br></br></br></br></br></br></br></br>
+
+<!-- onblur -->	
+    <!-- href="#" means 'go to top of page'  -->
+	<h5>Example 3: ondblur</h5>	
+    <a href="#" onblur="alert('The link has lost focus')">Top -- onblur/lost focus</a>
+
+	</br></br
+</body>
+</html>

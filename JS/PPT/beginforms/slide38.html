@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang = "en">
+<head>
+	<title>Begin Forms</title>
+	<meta charset="utf-8"/>
+    <meta name ="keywords" content = "form, beginforms" />
+</head>
+<body>
+	
+	<fieldset><legend>Personal Information</legend>
+    <label for="firstname"> What is ur name?:&nbsp;</label>
+		<input id="firstname" type="text" name="firstname">
+		</br><br>
+		<label for="lastname"> What is ur email address:&nbsp;</label>
+		<input id="lastname" type="text" name="lastname"> </br><br>
+</fieldset>
+	<fieldset><legend>Survey Questions</legend>
+    <h4>Plz check all that apply:</h4>
+		<input type="radio" name="gender" id="male" value="male"> I really like ur web
+		</br><br>
+		<input type="radio" name="gender" id="female" value="female"> I really like ur web<br /><br />
+		<label for="qty">Quantity:</label>
+		<input id="qty" type="number" name="qty" min="1" max="20">
+		<br><br>
+		<h4>Plz check all that apply:</h4>
+		<input type="radio" name="gender" id="male" value="male"> I really like ur web
+		</br><br>
+		<input type="radio" name="gender" id="female" value="female"> I really like ur web<br /><br />
+		<select multiple size="4" name="college" id="college">
+	<option> What is your current college classification</option>
+	<option value="fr"> Freshman</option>
+	<option value="so"> Sophomore</option>
+	<option value="ju"> Junior</option>
+	<option value="se"> Senior</option>
+	<option value="gr"> Graduate</option>
+</fieldset>
+<fieldset><legend>Free for All:</legend>
+    <h2><label for="comments">Feel Free;</label></h2>
+		<textarea id="comments" name="comments" cols="40" rows="8" >Add any comments you would like</textarea><br />
+		
+</fieldset>
+<input type="submit" value="Submit Survey">&nbsp;
+		<input type="reset" value="Clear">
+</body>
+</html>

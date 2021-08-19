@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang = "en">
+
+<head>
+	<title>JS Validate Form Controls</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="styles/validate.css">
+	<script type="text/javascript" src="styles/validate.js"></script>
+</head>
+
+<div id="wrapper">
+  <body>
+	<button type="submit" id="myCart"> <img src="images/cart.png" height="27px" width="22px" 
+                  alt="Shopping Cart"><br />My Shopping Cart
+	</button>
+	<br>	
+	<h1>Survey Information</h1>
+	<p>Begin our survey by entering the 7-character password provided.<p/>
+
+	
+	<form onsubmit="return validateForm();" name="custinfo">
+		<label for="pw">Password:&nbsp;</label>
+		<input type="password" name="pw" id="pw" maxlength="7" size="12">
+		<br><br>
+		
+		<fieldset><legend>Customer Information</legend>
+			<label for="fname"><span class="redstar">&#42;</span>First Name:</label>
+				<input type="text" name="fname" id="fname"><br><br>
+			<label for="lname"><span class="redstar">&#42;</span>Last Name:</label>
+				<input type="text" name="lname" id="lname"> <br><br>
+			<label for="street"><span class="redstar">&#42;</span>Street:</label>
+				<input type="text" name="street" id="street" size="54"> <br><br>
+			<label for="city"><span class="redstar">&#42;</span>City:</label>
+				<input type="text" name="city" id="city"><br><br>
+			<label for="state"><span class="redstar">&#42;</span>State:</label>
+				<input type="text" name="state" id="state" size="5" maxlength="2"><br><br>
+			<label for="zip"><span class="redstar">&#42;</span>Zip:</label>
+				<input type="text" name="zip" id="zip" maxlength="5" size="5">&#45;
+				<input type="text" name="zip4" id="zip4" maxlength="4" size="4"><br><br>
+			<label for="em"><span class="redstar">&#42;</span>Email:</label>
+				<input type="email" name="em" id="em" size="55"><br><br>
+			<div class="gndrRadio">
+			
+			Gender:
+			<input type="radio" name="gndr" id="gndrmale" > Male
+			<input type="radio" name="gndr" id="gndrfemale" > Female
+		</div>	
+		</fieldset>	
+<!--		
+		</form>
+				
+	<form  name="classinfo">
+-->	
+		<br><br>	
+		Indicate courses in which you are interested: <br>
+		&nbsp;<input type="checkbox" name="html" id="html" value="true" >HTML<br>
+		&nbsp;<input type="checkbox" name="css" id="css" value="true" >CSS<br>
+		&nbsp;<input type="checkbox" name="js" id="js" value="true" >JavaScript<br>
+		&nbsp;<input type="checkbox" name="php" id="php"  value="true">PHP
+		<br><br>
+		
+		<select size="1" name="classification" id="classification">
+			<option> What is your current college classification</option>
+			<option value="fr">Freshman</option>
+			<option value="so">Sophomore</option>
+			<option value="jr">Junior</option>
+			<option value="sr">Senior</option>
+			<option value="gr">Graduate</option>
+		</select>
+<!--		
+	</form>
+	
+	<form name="orderinfo">	
+-->
+		<label for="comments"><h4>Comments:</h4> </label>
+		<textarea name="comments" id="comments" cols="40" rows="8" > Add any comments you would like.
+		</textarea><br>
+		<input type="submit" value="Submit Survey">&nbsp;
+		<input type="reset">
+	</form>
+  </body>
+</div>
+</html>

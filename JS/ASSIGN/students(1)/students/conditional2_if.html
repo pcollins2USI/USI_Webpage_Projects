@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Conditionals/Validation --IF</title>
+<style>
+#wrapper {margin: 5%;
+		background-color:#f5f5f0;}
+h2, p, select, input, label {margin-left: 30px;}
+</style>
+
+<script type="text/javascript" src="conditional2_if.js"></script>
+</head>
+<body>
+<div id="wrapper">
+
+
+<!-- 4-------------------------------------- -->
+	<h2>(onclick) Length Test: </br> If with else</h2>
+	
+	<p>Enter your account number (xx-xxxx):</p>
+	<input type="text" id="accountnum" name="accountnum" /> 
+	<input type="button" value="Retrieve information" onclick="checkacct(accountnum.value)" />
+	
+	<p id="getacct">Click the button above to retrieve your account information.</p>
+
+	
+<!-- 5-------------------------------------- -->
+	<h2>(onblur) Numeric, length, & existance Test (required field?): </br> If without else</h2>
+	<label for="zip">5-digit Zip:</label>
+		<input type="text" id="zip" name="zip"  onblur="zipcode(zip.value)" />
+	<p id="zip_msg"></p>
+
+	
+<!-- 6-------------------------------------- -->
+	<h2>(onchange or onclick) Set the Page Color:  </br> If with else if </br> (Compare with the case solution shown in case_illustrated file)</h2>
+	<select id="pagecolor" name="pagecolor" onchange="pgcolor(pagecolor.value)">
+		<option value="yellow">Yellow</option>
+		<option value="green">Green</option>
+		<option value="red">Red</option>
+		<option value="blue">Blue</option>
+	</select>
+
+</div>
+</body>
+</html>

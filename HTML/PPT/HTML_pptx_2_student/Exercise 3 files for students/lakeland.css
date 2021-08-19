@@ -1,0 +1,36 @@
+﻿
+/* element styles */
+h2 {
+  text-align: center;
+  font-family: georgia, "times new roman", times, serif;
+  font-size: 1.5em;
+  }
+
+
+/* ID styles */
+#mainnav {
+  text-align: center;
+  background: #B8944D;
+  padding: 0.25em;
+  margin: 0;
+  }
+#box {
+  border: 0.25em solid #422100;
+  width: 40em;
+  padding: 1em;
+  margin-left: auto; 
+  margin-right: auto;
+  background: #F0E68C;
+  }
+
+#footer {
+  background: #B8944D;
+  text-align: center;
+  padding: 0.25em;
+  margin: 0;
+  }
+
+/* class styles */
+  .callout {
+  font-weight: bold;
+  }

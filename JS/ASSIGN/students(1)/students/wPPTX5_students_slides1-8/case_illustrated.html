@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang = "en">
+<head>
+	<title>JavaScript Practice</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="case_illustrated.js"></script>	
+<style>
+#wrapper {margin: 5%;
+		background-color:#f5f5f0;}
+h2, p, select, input, label {margin-left: 30px;}
+p {color:#00f;}
+</style>
+
+	
+</head>
+
+<body>
+<div id="wrapper">
+	<h1>Using Switch/Case Structure</h1>
+
+<!-- What is "value" for an option group item?"  
+     Use onchange or onclick -->	
+	<p>Select a background color </p>
+	<h2>Option group (drop-down combo):</h2>	
+	<select id="bkcolor" name="bkcolor" onchange="choose_color(bkcolor.value)">
+		<option value="yellow">Yellow</option>
+		<option value="green">Green</option>
+		<option value="red">Red</option>
+		<option value="blue">Blue</option>
+	</select>
+
+
+	
+	
+	
+<!-- What is "value" for a radio button item?" 
+	Could send the id.value  or the actual value  (for example, bkred.value  or  'red')
+     Use onchange or onclick  	-->
+	<h2>Radio buttons:</h2>
+	<input type="radio" name="bkcolor" id="bkred" value="red" onchange="choose_color(bkred.value)">
+		<label for ="bkred">Red</label><br>
+		
+	<input type="radio" name="bkcolor" id="bkgreen" value="green" onchange="choose_color(bkgreen.value)">
+		<label for ="bkgreen">Green</label><br>
+
+	<input type="radio" name="bkcolor" id="bkblue" value="blue" onchange="choose_color('blue')">
+		<label for ="bkblue">Blue</label><br>
+		
+	<input type="radio" name="bkcolor" id="bkorange" value="orange" onchange="choose_color('orange')">
+		<label for ="bkorange">Orange</label><br>	
+
+</div>
+</body>
+</html>

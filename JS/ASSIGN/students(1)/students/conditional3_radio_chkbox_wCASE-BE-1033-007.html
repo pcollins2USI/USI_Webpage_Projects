@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conditionals/Validation --IF</title>
+<!-- students will create the js file so check src -->
+<script type="text/javascript" src="conditional3_radio_chkbox_wCASE.js"></script>
+</head>
+<body>
+
+<!-- 7----------------using onclick works too --------------------- 
+  Remember that for radio buttons, the id.value or the actual value can be sent to the function -->
+
+	<h2>(onchange) Radio buttons:  Switch/Case  </h2>
+	<p>Select the make for which you are looking:  If with switch/case </p>
+<!--mkbuick.value  being sent to  vehicle  function -->
+	<input type="radio" name="make" id="mkbuick" value="buick" onchange="vehicle(mkbuick.value)">
+		<label for ="mkbuick">Buick</label><br>
+<!--value 'ford' is hardcoded and sent to  vehicle  function -->		
+	<input type="radio" name="make" id="mkford" value="ford" onchange="vehicle('ford')">
+		<label for ="mkford">Ford</label><br>
+
+	<input type="radio" name="make" id="mktoyota" value="toyota" onchange="vehicle(mktoyota.value)">
+		<label for ="mktoyota">Toyota</label><br>
+		
+	<input type="radio" name="make" id="mkvolkswagen" value="volkswagen" onchange="vehicle('volkswagen')">
+		<label for ="mmkvolkswagen">Volkswagen</label><br>
+
+
+	<span id="result"></span>
+
+
+	
+	
+<!-- 8----------onchange OR onclick is activated when object is checked AND unchecked!  ----------->
+
+	<h2>(onclick or onchange) checkboxes:  IF and Switch/Case  </h2>
+	<p>Select all of the foods you wish to order:  </p>
+	
+	 <!-- Illustration 1:   ---not a good solution--  
+		  Recall that the checkboxes could be viewed as independent, not as a group.
+		  This shows what happens when checkboxes are treated as independent items and sent to different functions.
+		  Recall, too, that the value of checkboxes is "true" when checked.  
+		  The flaw is that you click to check and uncheck a box.     -->  
+<!-- 
+-->
+	<input type="checkbox" name="cheese" id="cheese" value="true" onchange="allitems(cheese)">
+		<label for ="cheese">cheese</label><br>
+		
+	<input type="checkbox" name="meat" id="meat" value="true" onchange="allitems(meat)">
+		<label for ="meat">meat</label><br>
+		
+	<input type="checkbox" name="milk" id="milk" value="true" onchange="allitems(milk)">
+		<label for ="milk">milk</label><br>
+		
+	<input type="checkbox" name="pizza" id="pizza" value="true" onchange="allitems(pizza)">
+		<label for ="pizza">pizza</label><br>
+		
+	<span id="listhead"></span>
+	<span id="list"></span>
+
+	
+<!-- Illustration 2: ---- better -----  
+	  Now all of the checkbox values are being sent to the same function 
+	  JS is used to assign 'true' to checked and 'not true' to unchecked  
+-->
+
+<!--
+
+        <input type="checkbox" name="cheese" id="cheese" value="true" onclick="item('cheese')">
+		<label for ="cheese">cheese</label><br>
+		
+	<input type="checkbox" name="meat" id="meat" value="true" onclick="item('meat')">
+		<label for ="meat">meat</label><br>
+		
+	<input type="checkbox" name="milk" id="milk" value="true" onclick="item('milk')">
+		<label for ="milk">milk</label><br>
+		
+	<input type="checkbox" name="pizza" id="pizza" value="true" onclick="item('pizza')">
+		<label for ="pizza">pizza</label><br>
+		
+	<span id="listhead"></span>
+	<span id="list"></span>	
+-->	
+
+</body>
+</html>

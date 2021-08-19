@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang = "en">
+<head>
+	<title>Begin JavaScript</title>
+	<meta charset="utf-8"/>
+	<meta name ="keywords" content = "javascript, comment" />
+    <link rel="stylesheet" type="text/css" media="screen" href="contact.css" />
+
+
+<script type="text/javascript">
+
+document.write("<h1>Hello World!</h1>");
+
+// This is a one-line comment in a js script
+/* This can be used for one-line and multiple-line comments
+	in a js script
+*/
+window.alert("welcome to my web page!");
+document.bgColor='#ffff00';
+document.write("<p>This document was last modified on:</p>");
+document.write(document.lastModified);
+document.write("<p>Today's date is: " + Date()+"</p>");
+
+var firstname = patrick;
+document.write(firstname);
+var myname  =  prompt("What is your last name?");
+		document.write(myname);
+
+</script>
+
+</head>
+<body>
+<!-- With the script in the head, the rendering is <h1> and then <p>;
+	 Move the script after the <p> and it will render <p> and then <h1>
+-->	 
+
+	<p>This is my first paragraph</p>
+	<ul>
+		<li>document.write(...)</li>
+		<li>window.alert(...)</li>
+		<li>document.bgColor=...</li>
+	</ul>
+
+
+</body>
+</html>

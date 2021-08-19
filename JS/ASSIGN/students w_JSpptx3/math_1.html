@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript var</title>
+	<meta charset="utf-8">
+	<style>h4 {color:#f00; } </style>
+</head>
+<body>
+	<p>MATH EXAMPLES 1</p>
+	
+<script type="text/javascript">
+	var value1; var value2; var value3; var value4; 
+	var result1; var result2; var result3;
+	  value1 = 5;
+	  value2 = 10;
+	  value3 = 15;
+	  value4 = 20;
+/* add, subtract divide variables (= is assignment; replaces previous value)  */
+	  document.write("<h4>value1 =5; value2 =10; value3 =15; value4 =20 </br> </br>replace previous value </h4>");
+	  
+	  result1 = value1+value2;		  document.write(result1 + "&nbsp;&nbsp;&nbsp; result1 = value1+value2<br>");
+	  result2 = (value1+value2)/2; 	  document.write(result2 + "&nbsp;&nbsp;&nbsp; result2 = (value1+value2)/2<br>");
+	  result3 = value4-value2;    	  document.write(result3 + "&nbsp;&nbsp;&nbsp; result3 = value4-value2<br><br>");
+	 /* ------- */
+	
+
+/* add, subtract divide variables (+= adds to previous value)  */
+	  document.write("<h4> += adds to  previous value </h4>");	
+	  
+	  result1+=value4;				document.write(result1 + "&nbsp;&nbsp;&nbsp; result1+=value4<br>");
+	  result1-=value1;				document.write(result1 + "&nbsp;&nbsp;&nbsp; result1-=value1<br><br>");
+	  value4*=value2;				document.write(value4 + "&nbsp;&nbsp;&nbsp;  value4*=value2<br>");
+	  value4*=value2;				document.write(value4 + "&nbsp;&nbsp;&nbsp;  value4*=value2<br><br>");
+
+/*  divide value in value3 by 4 and store result in value3  */	  
+	  value3/=4;  		    		document.write(value3 + "&nbsp;&nbsp;&nbsp;  value3/=4");
+	  
+/*  divide 10 by 3 and store remainder in result1  */
+	  document.write("<h4>  result1=10 </br> store remainder</h4>");
+	  
+	  result1=10;				
+	  result1%=3;				document.write(result1 + "&nbsp;&nbsp;&nbsp;result1%=3");
+
+</script>	
+</body>
+</html>

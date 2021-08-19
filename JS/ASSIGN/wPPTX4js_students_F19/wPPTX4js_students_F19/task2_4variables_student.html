@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang = "en">
+<head>
+	<title>JavaScript Functions</title>
+	<meta charset="utf-8"/>
+<style> h2 {color:#cc9900; text-decoration:underline;} </style>
+
+<script type="text/javascript" src="task2_4variables_student.js"></script>
+
+</head>
+<body>
+<!--
+-------------------------------------------------------------------
+  STUDENTS: tweak the section below (from functions1 illustration) to pass 4 variables:  cost of 
+     a packet of corn seed, cost of a packet of pea seed, and the two quantities being ordered.
+     Add an onClick event handler.
+	 Fix the source of the script link in the head section.
+-------------------------------------------------------------------
+-->
+		
+  <!-- Quantities being ordered are arguments from 2 input boxes  -->
+
+	<h2>veggieseeds function</h2>    
+	
+	<label id="cost_corn">Each packet of Silver Queen corn seed is $<span id="price_corn">1.99</span>.</label><br/>
+	<label id="cost_peas">Each packet of Purple Hull peas seed is $<span id="price_peas">1.75</span>.</label><br/>
+	
+	<p>Please indicate the number of packets you are ordering.  Click Calculate for the total cost.</p>
+	
+	<label for "packets_corn">How many packets of corn seed are you ordering?</label>
+		<input type="text" name="packets_corn" id="packets_corn" size=5px />
+		<br/>
+	<label for "packets_peas">How many packets of peas seed are you ordering?</label>
+		<input type="text" name="packets_peas" id="packets_peas" size=5px />
+		<br/>
+
+	<p id="tot_cost"></p>
+	
+	<input type="button" value="Calculate Cost"  onClick="cal(packets_corn.value, packets_peas.value)" />
+	<span id="p_c"></span>
+	<span id="p_p"></span>
+	<span id="tot"></span>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Web Live</title>
+    <link rel="stylesheet" href="styles/mystyle.css">
+    <script type="text/javascript" src="styles/myscripts.js">
+    </script>
+</head>
+
+<body>
+    <img src="images/logo.png" alt="company logo" height="200" width="200">
+
+
+    <ul id="navbar-nav" class="navbar-nav">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li><a href="index.html">Page 2</a></li>
+        <li>
+            <a href="pages/about.html">About</a>
+        </li>
+    </ul>
+    <h3>Home Page</h3>
+    <hr>
+    <label for="navbar">Choose a Nav Bar Color:</label>
+
+    <select id="navcolor">
+	  <option value="red">Red</option>
+	  <option value="blue">Blue</option>
+	  <option value="green">Green</option>
+	</select>
+    <button id="navbar" type="button" onclick="navChange()">Change Color</button>
+    <br><br>
+    <label for="custom">Choose Custom Color:</label>
+    <input type="text" id="hcolor" name="hcolor" value="#">
+    <button id="custom" type="button" onclick="navCustom()">Change to Custom Color</button>
+    <hr>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <p>Value: <span id="demo"></span></p>
+    </div>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+    </script>
+</body>
+
+</html>

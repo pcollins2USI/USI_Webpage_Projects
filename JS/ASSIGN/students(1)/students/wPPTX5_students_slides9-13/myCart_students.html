@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conditionals/Validation --IF</title>
+<!-- students:  add a link and create the js file -->
+<script type="text/javascript" src="myCart.js"></script>
+
+</head>
+<body>
+
+
+<!-- onclick could be onchange; buttons allow accumulation of checked items AND clearing of items  -->
+
+	<h2>checkboxes:  Build a Shopping Cart; Display and Clear  </h2>
+	<p>Select all of the items you wish to order: </p>
+
+  <form>
+	<input type="checkbox" name="merchandise" id="notepad" value="notepad" onclick="supplies('notepad')">
+		<label for ="notepad">notepad</label><br>
+		
+	<input type="checkbox" name="merchandise" id="paper" value="paper" onclick="supplies('paper')">
+		<label for ="paper">paper</label><br>
+		
+	<input type="checkbox" name="merchandise" id="paperclip" value="paperclip" onclick="supplies('paperclip')">
+		<label for ="paperclip">paperclip</label><br>
+		
+	<input type="checkbox" name="merchandise" id="pin" value="pin" onclick="supplies('pin')">
+		<label for ="pin">pin</label><br>	
+		
+	<input type="checkbox" name="merchandise" id="staples" value="staples" onclick="supplies('staples')">
+		<label for ="staples">staples</label><br>
+		
+	<input type="checkbox" name="merchandise" id="tape" value="tape" onclick="supplies('tape')">
+		<label for ="tape">tape</label><br><br>
+		
+	<input type="button" name="vcart" id="vcart" value="View My Cart" onclick="viewcart()">	
+	<input type="reset" name="scrubcart" id="scrubcart" value="Empty My Cart" onclick="emptycart()">
+	<br/>
+	<span id="cart"></span>
+  </form>
+</body>
+</html>

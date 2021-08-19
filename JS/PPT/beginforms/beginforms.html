@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang = "en">
+<head>
+	<title>Begin Forms</title>
+	<meta charset="utf-8"/>
+    <meta name ="keywords" content = "form, beginforms" />
+<!--   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)"
+              href="beginforms.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1024px)"
+              href="beginformsmob.min.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="beginformsprint.css" /> 
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="scripts/beginforms.js"></script>
+    <style type="text/css" media="only screen and (min-device-width: 1025px)">
+      article {margin-top: 3em;}
+    </style>  
+-->
+
+    <!--[if lt IE 10]>
+      <link rel="stylesheet" type="text/css" media="screen" href="beginforms.css" />
+    <![endif]-->
+
+</head>
+<body>
+<button type="submit"> 
+       <img src="cart.png" height="40px" width="40px" alt="Signup for
+                     free newsletter">
+        <br/>My shopping cart
+</button>
+
+	<h1>Survey Information</h1>
+	<p>Begin our survey by entering the 7-character password provided.</p>
+     <form>
+         <label for="pw">Password:&nbsp;</label>
+		 <input id="pw" type="password" name="pw" maxlength="7" size="12"> 
+		 <br/><br/>
+		 <br /><br />
+			<fieldset><legend>Customer Information</legend>
+    <label for="firstname"> First Name:&nbsp;</label>
+		<input id="firstname" type="text" name="firstname">
+		
+		<label for="lastname"> Last Name:&nbsp;</label>
+		<input id="lastname" type="text" name="lastname"> </br><br>
+		<label for ="street">Street:&nbsp;</label> 
+       <input type="text" name="street" id="street" size="54">
+		<br><br>
+		<label for="city">City:&nbsp;</label>
+		<input type="text" name="city" id="city">
+		<label for ="state">State:&nbsp;</label>
+		<input type="text" name="state" id="state" maxlength="2" size="5">
+		<label for="zip">Zip:&nbsp;</label>
+		<input type="text" name="zip" id="zip" maxlength="5" size="5">
+		<br><br>
+		<label for="email">E-mail:&nbsp;</label>
+        <input id="email" type="email" name ="email"><br>
+		<!-- <input type="submit" value="Sign Me Up!"> --> 
+		<br /><br />
+		
+		<!-- <label for="gender">Gender: </label> <br /> -->
+		<h4>Gender:</h4>
+		<input type="radio" name="gender" id="male" value="male"> Male
+		<input type="radio" name="gender" id="female" value="female"> Female<br /><br />
+</fieldset>		
+		<!-- <p>Indicate courses in which you are interested:</p> -->
+		<h4>Indicate courses in which you are interested:</h4>
+		<input type="checkbox" name="h" id="h" value="yes">&nbsp;HTML<br />
+		<input type="checkbox" name="c" id="c" value="yes">&nbsp;CSS<br />
+		<input type="checkbox" name="j" id="j" value="yes">&nbsp;JavaScript<br />
+		<input type="checkbox" name="p" id="p" value="yes">&nbsp;PHP<br />
+		<!--Extra-->
+		<!-- <br />
+		<label for="qty">Quantity:</label>
+		<input id="qty" type="number" name="qty" min="1" max="20">
+		<br><br>
+		<input type="hidden" name="language" value="English">
+		<br/> -->
+		<!--Extra-->
+		<br /><br />
+		<select size="1" name="college" id="college">
+	<option> What is your current college classification</option>
+	<option value="fr"> Freshman</option>
+	<option value="so"> Sophomore</option>
+	<option value="ju"> Junior</option>
+	<option value="se"> Senior</option>
+	<option value="gr"> Graduate</option>
+</select>
+
+		<h2><label for="comments">Comments:&nbsp;</label></h2>
+		<textarea id="comments" name="comments" cols="40" rows="8" >Add any comments you would like</textarea><br />
+		<input type="submit" value="Submit Survey">&nbsp;
+		<input type="reset" value="Clear">
+
+     </form>
+
+
+
+
+</body>
+</html>

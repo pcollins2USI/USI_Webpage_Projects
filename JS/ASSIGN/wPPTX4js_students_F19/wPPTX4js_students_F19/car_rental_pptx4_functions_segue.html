@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Car Rental_begin</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="task1_car_rental_pptx4_student.js"> </script>
+</head>
+<body>
+
+<!-- Exercise 6 Task6   Car Rental with text boxes and a button; no script necessary 
+     Note that the text box VALUE is used to pull the numeric rather than string value -->
+
+	<label for "days_out">Days out:  </label>
+		<input type="text" id="days_out" size="5" >
+	</br></br>	
+	<label for "hrs_over">Hours out:</label>
+		<input type="text" id="hrs_over" size="5">
+		
+	<p> Charge for <span id="d_out"></span> days:  <span id="d_cost"></span></p>
+	
+	<p> Charge for <span id="hr_out"></span> hours over:  <span id="hr_cost"></span></p>
+	
+	<p> Total Charge:  <span id="tot_cost"></span></p>	
+	
+	<input type="button" value="Calculate charges" onClick="rental()"
+	/>
+	
+</body>
+</html>
