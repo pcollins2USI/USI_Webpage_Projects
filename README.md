@@ -3,6 +3,6 @@ This repo shows my built web pages durning my class in intro to web development.
 
 ### Assignment 3 Yoga Webpage
 ![](./SimpleYogaWebsiteGIF.gif)
-
+[Path to folder](./CSS/ASSIGN/Assignment3_Yoga/)
 ### Assignment 4 Restaurant Webpage
 ![](./SimpleRestaurantWebsiteGIF.gif)
